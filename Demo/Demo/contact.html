@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>联系我们 – 中美贸易预测平台</title>
+  <link rel="stylesheet" />
+  <style>
+    /* 表单容器 */
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0d47a1;
+    }
+    .contact-form .form-group {
+      margin-bottom: 1rem;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: #0d47a1;
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 1rem;
+    }
+    .contact-form button:hover {
+      background: #094282;
+    }
+    /* 联系信息栏 */
+    .contact-info {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+      color: #555;
+      line-height: 1.6;
+    }
+    .contact-info p {
+      margin-bottom: 0.75rem;
+    }
+    .contact-info a {
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="homepage.html">返回主页</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- 联系表单 -->
+    <div class="contact-form">
+      <h2>联系我们</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" placeholder="请输入您的姓名" required />
+        </div>
+        <div class="form-group">
+          <label for="email">电子邮箱</label>
+          <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">主题</label>
+          <input type="text" id="subject" name="subject" placeholder="请输入主题" required />
+        </div>
+        <div class="form-group">
+          <label for="message">留言内容</label>
+          <textarea id="message" name="message" placeholder="请输入您的问题或建议" required></textarea>
+        </div>
+        <button type="submit">发送留言</button>
+      </form>
+    </div>
+
+    <!-- 联系方式展示 -->
+    <div class="contact-info">
+      <p>📧 邮箱：<a href="mailto:contact@tradeforecast.cn">351963693@qq.com</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+   © 2025 中国大学生计算机设计大赛作品
+  </footer>
+</body>
+</html>

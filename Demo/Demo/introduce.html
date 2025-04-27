@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目介绍 - 中美贸易战数据可视化平台</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+            color: #f2f2f2;
+            padding: 40px;
+            max-width: 960px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 40px;
+            color: #00ffe7;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+            border-bottom: 2px solid #00ffe7;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-top: 40px;
+            color: #00c3ff;
+            border-left: 5px solid #00ffe7;
+            padding-left: 12px;
+        }
+
+        p {
+            font-size: 17px;
+            text-indent: 2em;
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 2.5em;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: #00ffe7;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* 返回主页按钮样式 */
+        .back-home-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+            .back-home-btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- 返回主页按钮 -->
+    <button class="back-home-btn" onclick="window.location.href='homepage.html'">
+        返回主页
+    </button>
+
+    <h1>项目介绍</h1>
+
+    <h2>一、项目背景</h2>
+    <p>
+        自2018年起，中美之间爆发了现代历史上规模最大、影响最深远的贸易冲突之一，涉及数千亿美元的商品及核心产业。作为世界两大经济体，这场贸易战不仅重塑了全球供应链格局，也深刻影响了世界经济走势与多边贸易秩序。
+    </p>
+
+    <h2>二、平台宗旨</h2>
+    <p>
+        本平台以<span class="highlight">中美贸易战</span>为核心主题，通过动态图表、数据可视化与结构化信息，为用户提供一站式观察窗口，帮助公众理解政策演变、掌握宏观趋势、分析经济影响。
+    </p>
+
+    <h2>三、核心功能</h2>
+    <ul>
+        <li><span class="highlight">中国进出口总值可视化：</span>呈现自2018年以来中国对美贸易总值变化，分季度/年度动态趋势。</li>
+        <li><span class="highlight">中美双边贸易变化折线图：</span>反映贸易战前后进出口比例与品类结构的重大调整。</li>
+        <li><span class="highlight">网络热议检测：</span>直观可见网络热议话题并从中提炼高频词语形成云图。</li>
+    </ul>
+
+    <h2>四、技术实现</h2>
+    <p>
+        平台采用<span class="highlight">HTML + CSS + JavaScript</span>构建前端架构，搭配<span class="highlight">ECharts</span>图表库实现高质量数据可视化，兼容桌面与移动端浏览体验。同时，为后期集成 Python 后端分析与自动更新数据预留拓展接口。
+    </p>
+
+    <h2>五、设计理念</h2>
+    <p>
+        网站致力于将<span class="highlight">复杂的贸易数据</span>转化为直观易懂的图表，通过折线、柱状和饼图等形式，让用户在最短时间内捕捉中美进出口与双边贸易变化的核心趋势。我们采用 React 与模块化组件化架构，配合按需加载和响应式布局，保证页面在各种设备和网络环境下都能流畅运行。简洁而富有科技感的界面配合细腻动画交互，不仅提升了数据探索的体验，也便于后续快速扩展新功能。所有代码开源共享，以期汇聚更多智慧，共同打造一个可持续演进的贸易数据可视化生态。
+    </p>
+
+    <h2>六、适用人群</h2>
+    <p>
+        本项目面向高校学生、研究者、政策分析师及关注国际局势的公众读者，旨在提供多维度、多形式的<span class="highlight">数据洞察</span>与<span class="highlight">结构化信息参考</span>。
+    </p>
+
+    <div class="footer">
+        © 2025 中国大学生计算机设计大赛作品
+    </div>
+</body>
+</html>

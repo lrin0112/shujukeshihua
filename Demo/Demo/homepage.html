@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中美贸易战数据可视化平台</title>
+  <link rel="stylesheet" href="css/homepage.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {    
+      font-family: 'Roboto', sans-serif;
+      background-image: url('images/background-image.png'); /* 使用背景图像 */
+      background-size: cover; /* 确保图片覆盖整个背景 */
+      background-position: center center; /* 图片居中 */
+      background-attachment: fixed; /* 背景固定 */
+      color: white;
+    }
+
+    header {
+      background-color: rgba(19, 16, 34, 0.715);
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 28px;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    nav a {
+      font-weight: bold;
+      color: #00ffd5;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00ffd5;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .card {
+      background-color: rgba(19, 16, 34, 0.515);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .card h3 {
+      font-size: 24px;
+      color: #4990c3;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0f7fa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(2, 21, 113, 0.05);
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 22px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <body>
+    <!-- 粒子背景容器 -->
+    <div id="particles-js"></div>
+  <header>
+    中美贸易战数据可视化平台
+  </header>
+
+  <nav>
+    <a href="introduce.html">项目介绍</a>
+    <a href="index.html">数据总览</a>
+    <a href="wangluo.html">相关热议话题</a>
+    <a href="contact.html">联系我们</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h3>平台概述</h3>
+      <p>&nbsp;&nbsp;该平台为用户提供了一个深入了解中美贸易战数据的工具，整合了两国的贸易额、关税政策、商品流动等关键数据，帮助用户实时跟踪贸易战的最新动态。平台通过图表和可视化数据，直观展示贸易战对两国经济的影响。</p >
+      <a href="index.html">
+      </a>
+    </div>
+    <div class="card">
+      <h3>实时数据更新</h3>
+      <p>&nbsp;&nbsp;平台提供最新的中美贸易数据，包括每月的进出口金额、GDP占额和主要贸易商品数据。所有数据都通过API进行实时更新，确保用户获得最新的贸易信息，分析趋势时更加精准。</p>
+    </div>
+    <div class="card">
+      <h3>多维度数据分析</h3>
+      <p>&nbsp;&nbsp;该平台支持多维度数据分析，用户可以根据不同的时间段、商品类别和国家选择条件进行自定义分析。无论是关税变化对进出口的影响，还是贸易品类占比，平台都能帮助用户深入挖掘数据背后的意义。</p>
+    </div>
+    <div class="card">
+      <h3>交互式可视化体验</h3>
+      <p>&nbsp;&nbsp;平台提供了丰富的交互式可视化图表，包括饼图、柱状图、折线图等，用户可以选择不同的图表类型进行查看。通过交互，用户可以更直观地感知数据的变化与趋势，更加便捷地进行数据分析。</p>
+    </div>
+  </div>
+
+  <footer>
+  © 2025 中国大学生计算机设计大赛作品
+  </footer>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#ffffff",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.4 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>

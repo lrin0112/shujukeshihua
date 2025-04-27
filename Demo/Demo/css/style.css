@@ -1,0 +1,125 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;          
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url(../images//bg.jpg) no-repeat top center;
+    overflow-x: hidden; /* 防止出现水平滚动条 */
+  }
+  body {
+    background: url(../images//bg.jpg) no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* 可选，让背景固定 */
+    background-size: cover;     
+  }
+  .back-home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #1a76c2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  #forecast-chart {
+    width: 100%;
+    height: calc(100% - 140px);
+  }
+  
+  /* 页脚固定 */
+  footer {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #2e6e9e;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+.gxlist {
+  padding: 1rem;
+  background-color: rgba(46, 110, 158, 0.1); 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* 标题 */
+.gxlist > h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+/* “三连按钮” */
+.gxlist .sanlianbt a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  background: #2e6e9e;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* 列表整体 */
+.gx-ul {
+  background-color: rgba(46, 110, 158, 0.1); 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* 每一项 */
+.gx-ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 0;
+}
+
+/* 链接文字统一样式 */
+.gx-ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+/* 悬停效果 */
+.gx-ul li a:hover {
+  color: #0056b3;
+  padding-left: 0.5rem; /* 轻微缩进 */
+}
+
+/* 最后一项去掉下边框 */
+.gx-ul li:last-child {
+  border-bottom: none;
+}

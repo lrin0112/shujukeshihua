@@ -1,0 +1,82 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "微软雅黑", sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* 容器 */
+  .gxlist {
+    background: white;
+    border: 2px solid #2e6e9e;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* 标题 */
+  .gxlist > h3 {
+    font-size: 1.8rem;
+    color: #2e6e9e;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  /* “网络舆情云图” 按钮 */
+  .sanlianbt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sanlianbt .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #2e6e9e;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .sanlianbt .btn:hover {
+    background: #1f4f7a;
+  }
+  
+  /* 列表 */
+  .gx-ul {
+    list-style: none;
+  }
+  .gx-ul li {
+    background: rgba(46, 110, 158, 0.1);
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #c8d8e4;
+    border-radius: 4px;
+  }
+  .gx-ul li:last-child {
+    margin-bottom: 0;
+  }
+  .gx-ul li a {
+    text-decoration: none;
+    color: #0d3b66;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: block;
+    word-break: break-word; /* 长文本换行 */
+    transition: color 0.2s, padding-left 0.2s;
+  }
+  .gx-ul li a:hover {
+    color: #093264;
+    padding-left: 8px;
+  }
+  
